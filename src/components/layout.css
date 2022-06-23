@@ -42,7 +42,16 @@ body {
   font-weight: normal;
   margin: 0;
   word-wrap: break-word;
+  /* height: 100vh; */
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
 a {
   background-color: transparent;
   color: var(--color-primary);
