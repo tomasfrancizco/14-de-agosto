@@ -42,7 +42,6 @@ body {
   font-weight: normal;
   margin: 0;
   word-wrap: break-word;
-  /* height: 100vh; */
 }
 
 main {
@@ -231,3 +230,85 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #df2810;
+  color: white;
+  border-top: 2px solid #ffdf00;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-title {
+  margin: 20px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contact-lists-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-img {
+  width: 15px;
+  margin-bottom: -3px;
+}
+
+@media (max-width: 400px) {
+  
+  .contact-title {
+    font-size: 0.8em;
+  }
+
+  .contact-lists-container {
+    font-size: 0.7em;
+  }
+  
+  .contact-img {
+    width: 8px;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact-lists-container {
+    display: block;
+    text-align: center;
+  }
+
+  .contact-list {
+    margin: 0;
+  }
+  
+  .contact-title {
+    font-size: 0.7em;
+  }
+
+  .contact-lists-container {
+    font-size: 0.5em;
+  }
+  
+  .contact-img {
+    width: 7px;
+  }
+}
+
+/* Footer */
